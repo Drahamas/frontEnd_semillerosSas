@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Semillero S.A.S</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="lista">
+                    <table class="TMenu">
+                        <tr class="trMenu">
+                            <td class="nombreEmpresa">Semillero S.A.S</td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="lista listaR"><a href="./index.html">Vehículos</a></li>
+                <li class="lista listaR"><a href="./pages/marcasLineas.html">Marcas y Lineas</a></li>
+                <li class="lista listaR"><a href="./pages/consultas.html">Consultas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contenedorGrande">
+            <div id="contenedor">
+                <div id="agregarVehiculo" class="vehiculo">
+                    <form action="" id="formAgregar">
+                        <table id="tablaAgregar" class="tabla">
+                            <thead>
+                                <th colspan="2">Agregar un Vehículo</th>
+                            </thead>
+                            <tbody>
+                                <tr><td>Placa:</td><td><input id="placaA" type="text" required></td></tr>
+                                <tr><td>Modelo:</td><td><input id="modeloA" type="number" required></td></tr>
+                                <tr><td>Venc. Seguro:</td><td><input id="seguroA" type="date" required></td></tr>
+                                <tr><td>Venc. Técnico<br> mecánica:</td><td><input id="tecnicoA" type="date" required></td></tr>
+                                <tr><td>Color:</td><td><input id="colorA" type="text" required></td></tr>
+                                <tr><td>Linea:</td><td><input id="lineaA" type="number" required></td></tr>
+                                <tr><td colspan="2"><button id="btnAgregar" class="btn">Agregar Vehículo</button></td></tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div id="editarVehiculo" class="vehiculo">
+                    <form action="" id="formEditar">
+                        <table id="tablaEditar" class="tabla">
+                            <thead>
+                                <th colspan="2">Editar un Vehículo por placa</th>
+                            </thead>
+                            <tbody>
+                                <tr><td>Placa:</td><td><input id="placaE" type="text" required></td></tr>
+                                <tr><td>Modelo:</td><td><input id="modeloE" type="number"></td></tr>
+                                <tr><td>Venc. Seguro:</td><td><input id="seguroE" type="date" ></td></tr>
+                                <tr><td>Venc. Técnico<br> mecánica:</td><td><input id="tecnicoE" type="date"></td></tr>
+                                <tr><td>Color:</td><td><input id="colorE" type="text"></td></tr>
+                                <tr><td>Linea:</td><td><input id="lineaE" type="number"></td></tr>
+                                <tr><td colspan="2"><button id="btnEditar" class="btn">Editar Vehículo</button></td></tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div id="vistaVehiculos">
+                <table class="tablaVista">
+                    <thead>
+                        <tr>
+                            <th colspan="7"class="headTablaVista">Vehículos</th>
+                        </tr>
+                            <th>Placa</th>
+                            <th>Modelo</th>
+                            <th>Venc. Seguro</th>
+                            <th>Venc. Técnico mecánica</th>
+                            <th>Color</th>
+                            <th>Linea</th>
+                            <th>Eliminar</th>
+                    </thead>
+                    <tbody id="tablaVista">
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+            
+    </main>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Consultas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="lista">
+                    <table class="TMenu">
+                        <tr class="trMenu">
+                            <td class="nombreEmpresa">Semillero S.A.S</td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="lista listaR"><a href="../index.html">Vehículos</a></li>
+                <li class="lista listaR"><a href="./marcasLineas.html">Marcas y Lineas</a></li>
+                <li class="lista listaR"><a href="./consultas.html">Consultas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contenedorGrande">
+            <div class="peticionConsulta">
+                <table>
+                    
+                    <thead>
+                        <tr><th colspan="2">CONSULTAS</th></tr>
+                        <tr><th colspan="2">Vehículos según el rango de fecha del seguro</th></tr>
+                    </thead>
+                    <form id="vehiculoRangoSeguro">
+                        <tbody>
+                            <tr><td>fecha inicial:</td><td><input id="fechaInicialSeguro" type="date" required></td></tr>
+                            <tr><td>fecha final:</td><td><input id="fechaFinalSeguro" type="date" required></td></tr>
+                            <tr><td colspan="2"><button id="btnRangoSeguro" class="btn">Consultar</button></td></tr>
+                            <tr><td><br></td></tr>
+                        </tbody>
+                    </form>
+                    <thead>
+                        <tr><th colspan="2">Vehículos según el rango de modelo</th></tr>
+                    </thead>
+                    <form id="vehiculoRangoModelo">
+                        <tbody>
+                            <tr><td>fecha inicial:</td><td><input class="inputModelo" id="fechaInicialModelo" type="number" required></td></tr>
+                            <tr><td>fecha final:</td><td><input class="inputModelo" id="fechaFinalModelo" type="number" required></td></tr>
+                            <tr><td colspan="2"><button id="btnRangoModelo" class="btn">Consultar</button></td></tr>
+                            <tr><td><br></td></tr>
+                        </tbody>
+                    </form>
+                    <thead>
+                        <tr><th colspan="2">Modelo</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Maximo almacenado: </td><td><input id="maxModelo" class="inputModelo" type="text"></td></tr>
+                        <tr><td>Minimo almacenado: </td><td><input id="maxMinimo" class="inputModelo" type="text"></td></tr>
+                        <tr><td>Suma de los modelos: </td><td><input id="sumaModelo" class="inputModelo" type="text"></td></tr>
+                        <tr><td>Promedio de los modelos: </td><td><input id="promModelo" class="inputModelo" type="text"></td></tr>
+                        <tr><td><br></td></tr>
+                    </tbody>
+                    <thead>
+                        <tr><th colspan="2">Líneas</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Activas:</td><td><input id="lineaActiva" class="inputModelo" type="text"></td></tr>
+                        <tr><td>Inactivas:</td><td><input id="lineaInactiva" class="inputModelo" type="text"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="resultadoConsulta">
+                <table id="contRangos"></table>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../scripts/constultas.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: white;
+}
+/*Menu Superior*/
+nav{
+    background-color:lightgray;
+}
+#menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 45px 80px;
+    display: block;
+}
+#logo{
+    width: 95px;
+}
+.lista a:hover{
+    background-color: black;
+    color: white;
+}
+.trMenu .nombreEmpresa{
+    color: black;
+    padding: 0px 40px;
+    font-size: 50px;
+}
+#contenedorGrande{
+    display: flex;
+    margin: auto;
+    width: 1300px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+    .vehiculo{
+        background-color: lightgrey;
+        border-radius: 10px;
+        width: 350px;
+        height: 290px;
+        margin: 20px 0px;
+        padding: 10px 0 10px 20px;
+        text-align: center;
+        border: 1px solid black;
+        box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.644);
+        
+    }
+        .tabla{
+                border-spacing: 5px;
+            }
+            .btn{
+                width: 200px;
+                height: 35px;
+                border-radius: 5px;
+                border: 0;
+                background-color: white;
+            }
+            .btn:hover{
+                background-color: grey;
+                color: white;
+                box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.644);
+            }
+    #vistaVehiculos{
+        background-color: white;
+        height: 700px;
+        width: 800px;
+        margin: 20px 0px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.644);
+        
+    }
+        .tablaVista{
+            width: 100%;
+            border-spacing: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        .headTablaVista{
+            background-color: lightgrey;
+            border-radius: 5px;
+        }
+        .tablaVista{
+            text-align: center;
+        }
+        .btnDel{
+            width: 60px;
+            height: 35px;
+            border-radius: 5px;
+            border: 0;
+            background-color: white;
+        }
+        .btnDel:hover{
+            background-color: grey;
+            color: white;
+            box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.644);
+        }
+
+
+
+/* Marcas y Lineas */
+.contMarcaLinea{
+    display: flex;
+    width: 1300px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+}
+    #contMarca{
+        width: 600px;
+        height: 500px;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: white;
+        box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.644);
+    }
+        #tablaMarca{
+            width: 100%;
+            border-spacing: 10px;
+        }
+    #contLinea{
+        width: 600px;
+        height: 500px;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: lightgrey;
+        box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.644);
+    }
+
+/*Consulta*/
+.peticionConsulta{
+    background-color: lightgrey;
+    border-radius: 10px;
+    width: 400px;
+    height: 700px;
+    margin: 20px 0px;
+    padding: 10px 0 10px 0px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.644);
+    
+}
+    .peticionConsulta table{
+        margin: auto;
+        border-spacing: 0px 8px;
+        /* background-color: red; */
+    }
+        .inputModelo{
+            width: 80px;
+            border-radius: 3px;
+            border: 0px;
+            text-align: center;
+        }
+#resultadoConsulta{
+    background-color: white;
+    height: 700px;
+    width: 750px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.644);
+}
+    #resultadoConsulta table{
+        width: 95%;
+        text-align: center;
+        border-spacing: 0px 10px;
+        margin: auto;
+    }
